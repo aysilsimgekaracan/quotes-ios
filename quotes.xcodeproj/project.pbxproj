@@ -11,6 +11,9 @@
 		3F9BF5372A9B3061004F3AAA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9BF5362A9B3061004F3AAA /* ContentView.swift */; };
 		3F9BF5392A9B3063004F3AAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F9BF5382A9B3063004F3AAA /* Assets.xcassets */; };
 		3F9BF53C2A9B3063004F3AAA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F9BF53B2A9B3063004F3AAA /* Preview Assets.xcassets */; };
+		3F9BF5432A9B9DD0004F3AAA /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9BF5422A9B9DD0004F3AAA /* Quote.swift */; };
+		3F9BF5452A9B9DFA004F3AAA /* QuoteResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9BF5442A9B9DFA004F3AAA /* QuoteResponse.swift */; };
+		3F9BF5472A9B9E15004F3AAA /* QuoteError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9BF5462A9B9E15004F3AAA /* QuoteError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,10 @@
 		3F9BF5362A9B3061004F3AAA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3F9BF5382A9B3063004F3AAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F9BF53B2A9B3063004F3AAA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3F9BF5422A9B9DD0004F3AAA /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
+		3F9BF5442A9B9DFA004F3AAA /* QuoteResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteResponse.swift; sourceTree = "<group>"; };
+		3F9BF5462A9B9E15004F3AAA /* QuoteError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteError.swift; sourceTree = "<group>"; };
+		3F9BF54A2A9BA561004F3AAA /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Config.xcconfig; path = ../Config.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +60,10 @@
 			children = (
 				3F9BF5342A9B3061004F3AAA /* quotesApp.swift */,
 				3F9BF5362A9B3061004F3AAA /* ContentView.swift */,
+				3F9BF5422A9B9DD0004F3AAA /* Quote.swift */,
+				3F9BF5442A9B9DFA004F3AAA /* QuoteResponse.swift */,
+				3F9BF5462A9B9E15004F3AAA /* QuoteError.swift */,
+				3F9BF54A2A9BA561004F3AAA /* Config.xcconfig */,
 				3F9BF5382A9B3063004F3AAA /* Assets.xcassets */,
 				3F9BF53A2A9B3063004F3AAA /* Preview Content */,
 			);
@@ -138,7 +149,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F9BF5372A9B3061004F3AAA /* ContentView.swift in Sources */,
+				3F9BF5432A9B9DD0004F3AAA /* Quote.swift in Sources */,
+				3F9BF5472A9B9E15004F3AAA /* QuoteError.swift in Sources */,
 				3F9BF5352A9B3061004F3AAA /* quotesApp.swift in Sources */,
+				3F9BF5452A9B9DFA004F3AAA /* QuoteResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,6 +161,7 @@
 /* Begin XCBuildConfiguration section */
 		3F9BF53D2A9B3063004F3AAA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F9BF54A2A9BA561004F3AAA /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -207,6 +222,7 @@
 		};
 		3F9BF53E2A9B3063004F3AAA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F9BF54A2A9BA561004F3AAA /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -261,6 +277,7 @@
 		};
 		3F9BF5402A9B3063004F3AAA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F9BF54A2A9BA561004F3AAA /* Config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -270,6 +287,7 @@
 				DEVELOPMENT_TEAM = G8H39BQ5UM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = quotes/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -282,6 +300,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = aysilsimge.quotes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -290,6 +309,7 @@
 		};
 		3F9BF5412A9B3063004F3AAA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F9BF54A2A9BA561004F3AAA /* Config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -299,6 +319,7 @@
 				DEVELOPMENT_TEAM = G8H39BQ5UM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = quotes/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -309,8 +330,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_SWIFT_FLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = aysilsimge.quotes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
